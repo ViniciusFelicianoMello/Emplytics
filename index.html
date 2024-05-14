@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emplytics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- SECTION -->
+    <section class="container">
+        <!-- TITULO PRINCIPAL -->
+        <div class="title flex">
+            <img src="img/EmpLytics.png" alt="Logo">
+            <h1>Emplytics</h1>
+        </div>
+        <!-- CONTROLE DA TABELA -->
+        <div class="controls flex">
+            <!-- ADICIONAR USUARIO -->
+            <div class="addUser">
+                <button id="addUserBtn"><i class="fa-solid fa-plus add_icon"></i></button>
+                <span>Adicionar Funcionário</span>
+            </div>
+            <!-- INPUT DE PESQUISA POR NOME -->
+            <div class="input_box">
+                <input type="text" id="searchInput" required>
+                <i class="fa-solid fa-filter font_icon"></i>
+                <label class="label">Nome</label>
+                <span></span>
+            </div>
+            <!-- ORDENAR POR SALÁRIO -->
+            <div class="input_box">
+                <label class="label_ativo">Ordenar por Salário</label>
+                <i class="fa-solid fa-sort icon_ativo"></i>
+                <select id="sortSelect">
+                    <option value="asc">Ascendente</option>
+                    <option value="desc">Descendente</option>
+                </select>
+            </div>
+        </div>
+        <!-- DIV TABELA -->
+        <div class="table">
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Email</th>
+                        <th>Salário</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Usuários serão adicionados aqui dinamicamente -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Modal de Adicionar/Editar Usuário -->
+        <div id="userModal" class="modal">
+            <div class="modal-box">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle">Título</h2>
+                <form id="userForm">
+                    <input type="hidden" id="userId" value="">
+
+                    <div class="input_box">
+                        <input type="text" id="name" name="name" required>
+                        <i class="fa-solid fa-face-smile font_icon"></i>
+                        <label for="name" class="label">Nome</label>
+                        <span></span>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="number" id="age" name="age" required>
+                        <i class="fa-solid fa-calendar-days font_icon"></i>
+                        <label for="age" class="label">Idade</label>
+                        <span></span>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="email" id="email" name="email" required>
+                        <i class="fa-solid fa-envelope font_icon"></i>
+                        <label for="email" class="label">Email</label>
+                        <span></span>
+                    </div>
+                    
+                    <div class="input_box">
+                        <input type="number" id="salary" name="salary" required>
+                        <i class="fa-solid fa-money-check-dollar font_icon"></i>
+                        <label for="salary" class="label">Salário</label>
+                        <span></span>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit" id="submitBtn"><i class="fa-solid fa-floppy-disk save_icon"> <span>Salvar</span></i></button>                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal de confirmação de exclusão -->
+        <div id="confirmDeleteModal" class="modal">
+            <div class="modal-box">
+                <h2>Confirmação</h2>
+                <p>Tem certeza de que deseja deletar este usuário?</p>
+                <div class="buttons flex">
+                    <button id="confirmDeleteBtn" class="confirm_btn"><i class="fa-solid fa-check"></i> Confirmar</button>
+                    <button id="cancelDeleteBtn" class="cancel_btn"><i class="fa-solid fa-ban"></i> Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

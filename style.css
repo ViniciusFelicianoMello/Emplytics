@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+:root {
+    --cor-um: #f3f3f3;
+    --cor-dois: #bdbdbd;
+    --cor-tres: #767676;
+    --cor-tres-d: #d941ff46;
+    --cor-quatro: #3d3d3d;
+    --cor-cinco: #2b2b2b;
+    --cor-seis: #1f1f1f;
+    --cor-seis-t: #1f1f1f9b;
+    --cor-sete: #d941ff;
+    --cor-oito: #32005d;
+
+    --cor-error: #ff0000;
+
+    --fonte-um: "Share Tech", sans-serif;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-um);
+    color: var(--cor-um);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--cor-seis);
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 0.1vh;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--cor-dois);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-tres);
+}
+::-webkit-scrollbar-horizontal {
+    height: 1px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    background: var(--cor-quatro);
+    border: 5px solid var(--cor-cinco);
+    border-radius: 1vw;
+    padding: 4vw 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TITULO */
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2em;
+}
+
+.title img {
+    width: 40px;
+    border: 2px solid var(--cor-sete);
+    border-radius: 50%;
+}
+
+.title h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--cor-sete);
+}
+/* TABLE CONTROLS */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 4em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 3px solid var(--cor-sete);
+}
+/* ADICIONAR FUNCIONARIO / SAVE FUNCIONARIO MODAL */
+.addUser button,
+.buttons button {
+    height: 2em;
+    width: 4em;
+    align-self: center;
+    color: var(--cor-um);
+    background-color: var(--cor-sete);
+    border-radius: 2em;
+    outline: none;
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.addUser button:hover,
+.buttons button:hover {
+    opacity: 1;
+}
+.addUser span {
+    display: none;
+}
+.addUser button:hover + span {
+    display: block;
+    position: absolute;
+    margin: -4em -3em;
+    color: var(--cor-um);
+    background: var(--cor-sete);
+    padding: 0.2em 0.5em;
+    border-radius: 2em;
+}
+.buttons button {
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttons span {
+    margin-left: 0.5em;
+}
+
+.add_icon,
+.save_icon {
+    color: var(--cor-um);
+}
+
+/* PESQUISAR POR NOME */
+.input_box {
+    position: relative;
+    width: auto;
+}
+
+.input_box input,
+.input_box select {
+    position: relative;
+    width: 100%;
+    padding: 0.2em 0 0.2em 1.8em;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    transition: 0.5s;
+    z-index: 10;
+    color: var(--cor-seis);
+}
+
+.input_box select {
+    background-color: var(--cor-um);
+    border-radius: 0.5vw;
+    color: var(--cor-seis);
+}
+
+.input_box label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.2em 0 0.2em 1.8em;
+    pointer-events: none;
+    color: var(--cor-dois);
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.input_box input:valid ~ .label,
+.input_box input:focus ~ .label,
+.label_ativo {
+    color: var(--cor-sete);
+    transform: translateY(-1.5em) translateX(-1.5em);
+    width: max-content;
+}
+
+.input_box span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 0.5rem;
+    background: var(--cor-um);
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.input_box input:valid ~ span,
+.input_box input:focus ~ span,
+.input_box input ~ .open_span {
+    height: 1.5rem;
+}
+
+.font_icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.3rem;
+    font-size: 1rem;
+    color: var(--cor-um);
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.input_box input:valid ~ i,
+.input_box input:focus ~ i {
+    color: var(--cor-sete);
+}
+
+.icon_ativo {
+    position: absolute;
+    left: 0;
+    padding: 0.3rem;
+    font-size: 1rem;
+    color: var(--cor-sete);
+    transition: 0.3s;
+    z-index: 15;
+}
+
+.input_box option {
+    color: var(--cor-seis);
+}
+
+/* TABELA */
+.table {
+    width: 100%;
+    height: 43vh;
+    overflow: scroll;
+    background: var(--cor-tres);
+    border: 3px solid var(--cor-sete);
+    border-radius: 1em;
+}
+
+.table table {
+    width: 100%;
+    align-items: center;
+    border-collapse: collapse;
+}
+
+.table table tr {
+    height: 3em;
+    border-bottom: 2px solid var(--cor-sete);
+}
+
+tbody tr:hover {
+    background-color: var(--cor-tres-d);
+} 
+
+.table table thead {
+    background: var(--cor-sete);
+    border: none;
+}
+
+.table table thead th {
+    color: var(--cor-oito);
+    font-size: 1.2em; 
+    letter-spacing: 0.1em;
+}
+
+.table table tbody th {
+    color: var(--cor-um);
+    font-size: 1em; 
+    letter-spacing: 0.1em;
+}
+
+.table table tbody td {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3em;
+    color: var(--cor-um);
+    font-size: 1em; 
+    letter-spacing: 0.1em;
+}
+
+.actions_btn {
+    padding: 0.3em;
+    font-size: 1.3em;
+    width: 2em;
+    border-radius: 2em;
+}
+
+tbody button {
+    background: transparent;
+    outline: none;
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+tbody button:hover {
+    opacity: 1;
+} 
+
+.edit_icon {
+    background: var(--cor-sete);
+}
+
+.delet_icon {
+    background: var(--cor-error);
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    overflow: auto;
+    cursor: auto;
+    background-color: var(--cor-seis-t);
+    backdrop-filter: blur(5px);   
+    place-items: center;
+    transition: 0.5s;
+    padding: 7em 0 0 0;
+}
+
+.modal-box {
+    position: relative;
+    background-color: var(--cor-quatro);
+    border: 3px solid var(--cor-cinco);
+    border-radius: 2rem;
+    padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+    margin: auto;
+    width: 40vw;
+    height: 60vh;
+    text-align: left;
+    gap: 2em;
+}
+
+.close {
+    position: absolute;
+    color: var(--cor-error);
+    right: 1em;
+    top: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.close:hover,
+.close:focus {
+    opacity: 1;
+}
+
+.modal-box h2 {
+    display: flex;
+    justify-content: center;
+    color: var(--cor-sete);
+    letter-spacing: 0.2em;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+
+.modal-box form .input_box{
+    margin-bottom: 2em;
+}
+
+.modal-box p {
+    align-self: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#confirmDeleteModal .modal-box {
+    height: 35vh;
+}
+
+#confirmDeleteModal .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1em;
+}
+
+.buttons .cancel_btn {
+    background: red;
+}
