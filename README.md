@@ -31,7 +31,7 @@ Além das funcionalidades já mencionadas, o projeto também inclui recursos adi
 
 <p align="right"><a href="#home">⬆️</a></p>
 
-<h2 id="howto">🔍 Como usar</h2>
+<h2 id="howto">⚒ Como usar</h2>
 
 <p>Projeto bem simples de se usar, nele você pode filtrar, adicionar, editar e deletar os funcionarios à tabela.</p>
 
