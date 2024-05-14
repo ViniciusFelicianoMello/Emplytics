@@ -1,8 +1,10 @@
-<h1>Emplytics</h1>
-
-<a href="https://github.com/othneildrew/Best-README-Template">
-  <img src="img/EmpLytics.png" alt="Logo" width="80" height="80">
-</a>
+<div align="center">
+  <h1>Emplytics</h1>
+  
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="img/EmpLytics.png" alt="Logo" width="80" height="80">
+  </a>
+</div>
 
 <h2>💻 Tecnologias</h2>
 <div>
