@@ -10,6 +10,7 @@
    <ol>
       <a href="#tecs">Tecnologias</a>
       <a href="#about">Sobre</a>
+      <a href="#howto">Como Usar</a>
    </ol>
 </details>
 
@@ -24,8 +25,22 @@
 <img src="img/EmplyticsBG.png" alt="backgorund" width="auto" height="auto">
 
 <p>Projeto realizado por mim para praticar logica em programação<p>
-<p>O projeto consiste em uma tabela de funcionários de uma empresa, na qual são exibidas informações como nome, idade, email e salário dos funcionários. Além disso, é possível adicionar, editar e excluir os funcionários da tabela. Durante o desenvolvimento, pratiquei a manipulação de modais e realizei um modal de confirmação que permite ao usuário confirmar ou cancelar a exclusão do funcionário selecionado. Essa funcionalidade adiciona uma camada extra de segurança, evitando exclusões acidentais e fornecendo uma experiência mais intuitiva ao usuário.<p>
+<p>O projeto consiste em uma tabela de funcionários de uma empresa, na qual são exibidas informações como nome, idade, email e salário dos funcionários. Além disso, é possível adicionar, editar e excluir os funcionários da tabela. Durante o desenvolvimento, pratiquei a manipulação de modais e realizei um modal de confirmação que permite ao usuário confirmar ou cancelar a exclusão do funcionário selecionado, sempre armazenando no local storage, de forma a nunca perder as informações adicionadas. Essa funcionalidade adiciona uma camada extra de segurança, evitando exclusões acidentais e fornecendo uma experiência mais intuitiva ao usuário.<p>
 <p>
 Além das funcionalidades já mencionadas, o projeto também inclui recursos adicionais para melhorar a usabilidade e a experiência do usuário. Implementei a capacidade de filtrar os funcionários por nome, permitindo que o usuário pesquise um funcionário específico e filtre os resultados com base no nome fornecido. Isso proporciona uma maneira rápida e eficiente de encontrar informações específicas na tabela, além disso, adicionei a capacidade de ordenar os funcionários por salário, oferecendo ao usuário a opção de selecionar entre ordem crescente e decrescente. Essa funcionalidade permite que os usuários organizem os dados de acordo com suas preferências, facilitando a identificação de padrões e a análise dos dados na tabela.</p>
 
-<p align="right">(<a href="#home">⬆️</a>)</p>
+<p align="right"><a href="#home">⬆️</a></p>
+
+<h2 id="howto">🔍 Como usar</h2>
+
+<p>Projeto bem simples de se usar, nele você pode filtrar, adicionar, editar e deletar os funcionarios à tabela.</p>
+
+<ul>
+  <li>★ Clique no '+' para adicionar funcionários a tabela</li>
+  <li>★ Clique no lapis para editar o funcionário a tabela</li>
+  <li>★ Clique na lata de lixo para deletar o funcionário a tabela</li>
+  <li>★ Digite o nome no 'input' para procurar na tabela</li>
+  <li>★ Selecione ascendente ou descescente para ordenar pelo salário</li>
+</ul>
+
+<p align="right"><a href="#home">⬆️</a></p>
