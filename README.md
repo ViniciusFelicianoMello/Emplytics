@@ -11,6 +11,7 @@
       <a href="#tecs">Tecnologias</a>
       <a href="#about">Sobre</a>
       <a href="#howto">Como Usar</a>
+      <a href="#author">Autor</a>
    </ol>
 </details>
 
@@ -44,5 +45,14 @@ Além das funcionalidades já mencionadas, o projeto também inclui recursos adi
   <li>★ Digite o nome no 'input' para procurar na tabela</li>
   <li>★ Selecione ascendente ou descescente para ordenar pelo salário</li>
 </ul>
+
+<p align="right"><a href="#home">⬆️</a></p>
+
+<h2 id="author">👨🏽‍💼 Autor</h2>
+
+<p>Vinicius Feliciano Mello - viniciusfelicianomello@hotmail.com</p>
+<a href="https://www.linkedin.com/in/vinicius-feliciano-mello/">Linkedin</a>
+<a href="https://instagram.com/viinifeliciano">Instagram</a>
+<a href="https://github.com/ViniciusFelicianoMello">Github</a>
 
 <p align="right"><a href="#home">⬆️</a></p>
