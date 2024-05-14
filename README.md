@@ -14,7 +14,7 @@
 </div>
 
 <details>
-  <sumary>🔗 Conteudo</sumary>
+ 
 </details>
 
 <h2>🔍 Sobre</h2>
