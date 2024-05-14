@@ -51,8 +51,10 @@ Além das funcionalidades já mencionadas, o projeto também inclui recursos adi
 <h2 id="author">👨🏽‍💼 Autor</h2>
 
 <p>Vinicius Feliciano Mello - viniciusfelicianomello@hotmail.com</p>
-<a href="https://www.linkedin.com/in/vinicius-feliciano-mello/">Linkedin</a>
-<a href="https://instagram.com/viinifeliciano">Instagram</a>
-<a href="https://github.com/ViniciusFelicianoMello">Github</a>
+<ul>
+  <li><a href="https://www.linkedin.com/in/vinicius-feliciano-mello/">Linkedin</a></li>
+  <li><a href="https://instagram.com/viinifeliciano">Instagram</a></li>
+  <li><a href="https://github.com/ViniciusFelicianoMello">Github</a></li>
+</ul>
 
 <p align="right"><a href="#home">⬆️</a></p>
