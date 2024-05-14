@@ -1,4 +1,4 @@
-<div align="center">  
+<div id="home" align="center">  
   <a href="https://emplytics.vercel.app/" target="_blank">
     <img src="img/EmpLytics.png" alt="Logo" width="80" height="80">
   </a>
@@ -20,4 +20,4 @@
 </details>
 
 <h2 id="about">🔍 Sobre</h2>
-<p></p>
+<img src="img/EmplyticsBG.png" alt="backgorund" width="auto" height="auto">
