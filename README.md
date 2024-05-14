@@ -29,6 +29,8 @@
 <p>
 Além das funcionalidades já mencionadas, o projeto também inclui recursos adicionais para melhorar a usabilidade e a experiência do usuário. Implementei a capacidade de filtrar os funcionários por nome, permitindo que o usuário pesquise um funcionário específico e filtre os resultados com base no nome fornecido. Isso proporciona uma maneira rápida e eficiente de encontrar informações específicas na tabela, além disso, adicionei a capacidade de ordenar os funcionários por salário, oferecendo ao usuário a opção de selecionar entre ordem crescente e decrescente. Essa funcionalidade permite que os usuários organizem os dados de acordo com suas preferências, facilitando a identificação de padrões e a análise dos dados na tabela.</p>
 
+<a href="https://emplytics.vercel.app/">Link do projeto</a>
+
 <p align="right"><a href="#home">⬆️</a></p>
 
 <h2 id="howto">⚒ Como usar</h2>
